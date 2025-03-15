@@ -29,7 +29,6 @@ const getImages = async (slug: string, url: string | undefined) => {
 
 export async function generateMetadata(
   { params }: Props,
-  parent: ResolvingMetadata
 ): Promise<Metadata> {
   const { slug } = await params;
   return {
