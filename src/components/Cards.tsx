@@ -23,7 +23,7 @@ const getImages = async (url: string | undefined) => {
 };
 
 export async function Cards() {
-  const url = process.env.URL;
+  const url = process.env.API_JAM_URL;
   const data = await getImages(url);
 
   return (

@@ -39,7 +39,7 @@ export async function generateMetadata(
 
 export default async function SomePage({ params }: Props) {
   const { slug } = await params;
-  const url = process.env.URL;
+  const url = process.env.API_JAM_URL;
   const data = await getImages(slug, url);
   return (
     <div className="flex flex-col items-center justify-items-center font-[family-name:var(--font-geist-sans)]">
